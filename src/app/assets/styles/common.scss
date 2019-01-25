@@ -12,18 +12,18 @@ body {
   margin: 0;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  background: #02192D;
+  background: $background_color;
   color: $text_color;
 }
 
 a {
-  color: rgba(255,255,255,0.6);
+  color: rgba($text_color, 0.6);
   text-decoration: none;
   transition: color 0.1s;
   cursor: pointer;
 
   &:hover {
-    color: $accent_color;
+    color: $text_color_strong;
   }
 }
 

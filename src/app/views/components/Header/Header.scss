@@ -1,3 +1,4 @@
+@import '../../../assets/styles/settings/_colors.scss';
 @import '../../../assets/styles/arrayStyle';
 
 .nav {
@@ -6,7 +7,7 @@
   left: 0;
   right: 0;
   padding: 0 100px;
-  background: rgba(2,25,45, 0.75);
+  background: $background_color rgba($background_color, 0.75);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 
@@ -30,7 +31,7 @@
         color: #00c4ff;
         font-weight: 400;
         font-size: 18px;
-        font-family: 'Ubuntu', sans-serif;
+        font-family: ' Ubuntu', sans-serif;
       }
     }
   }

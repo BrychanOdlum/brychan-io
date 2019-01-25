@@ -1,5 +1,7 @@
+@import 'settings/colors';
+
 ul.arrayStyle {
-  color: rgba(255,255,255,0.4);
+  color: rgba($text_color, 0.6);
   font-family: 'Fira Mono', monospace;
   font-size: 12px;
 
@@ -31,11 +33,12 @@ ul.arrayStyle {
     }
 
     a {
-      color: #ffffff;
+      color: $text_color_strong;
       font-size: 14px;
 
       &:hover {
-        color: #00c4ff;
+        color: $text_color_strong;
+        text-decoration: underline;
       }
     }
   }
