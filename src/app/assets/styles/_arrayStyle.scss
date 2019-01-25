@@ -1,0 +1,83 @@
+ul.arrayStyle {
+  color: rgba(255,255,255,0.4);
+  font-family: 'Fira Mono', monospace;
+  font-size: 12px;
+
+  li {
+    float: left;
+
+    &:first-child {
+      &:before {
+        float: left;
+        content: 'let options = ["';
+        font-family: 'Fira Mono', monospace;
+      }
+    }
+
+    &:not(:last-child) {
+      &:after {
+        float: right;
+        content: '", "';
+        font-family: 'Fira Mono', monospace;
+      }
+    }
+
+    &:last-child {
+      &:after {
+        float: right;
+        content: '"]';
+        font-family: 'Fira Mono', monospace;
+      }
+    }
+
+    a {
+      color: #ffffff;
+      font-size: 14px;
+
+      &:hover {
+        color: #00c4ff;
+      }
+    }
+  }
+
+  &.java {
+    li:first-child {
+      &:before {
+        content: 'string[] options = {"';
+      }
+    }
+
+    li:last-child {
+      &:after {
+        content: '"}';
+      }
+    }
+  }
+
+  &.javascript {
+    li:first-child {
+      &:before {
+        content: 'const options = ["';
+      }
+    }
+
+    li:last-child {
+      &:after {
+        content: '"]';
+      }
+    }
+  }
+
+  &.go {
+    li:first-child {
+      &:before {
+        content: 'options := []string{"';
+      }
+    }
+    li:last-child {
+      &:after {
+        content: '"}';
+      }
+    }
+  }
+}

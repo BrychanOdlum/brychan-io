@@ -1,0 +1,60 @@
+@import 'settings/colors';
+
+* {
+  outline: none !important;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  background: #02192D;
+  color: $text_color;
+}
+
+a {
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+  transition: color 0.1s;
+  cursor: pointer;
+
+  &:hover {
+    color: $accent_color;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  -webkit-appearance: none;
+  background: none;
+  border: solid 1px #00c4ff;
+  padding: 10px 15px;
+  color: #00c4ff;
+  font-size: 14px;
+  font-family: 'Fira Mono', monospace;
+  cursor: pointer;
+  margin: 0;
+
+  &:hover {
+    background: #00c4ff;
+    color: #02192D;
+  }
+
+  &:active {
+    margin-top: 1px;
+    margin-bottom: -1px;
+  }
+}
+
+strong {
+  color: #00c4ff;
+  font-weight: normal;
+}

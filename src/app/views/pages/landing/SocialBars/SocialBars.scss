@@ -1,0 +1,51 @@
+.bottomSocial {
+  position: fixed;
+  bottom: 140px;
+  font-size: 16px;
+  font-family: 'Fira Mono', monospace;
+
+  &:before {
+    content: '';
+    position: fixed;
+    bottom: 0;
+    width: 1px;
+    background: rgba(255,255,255,0.2);
+    height: 125px;
+  }
+
+  &.left {
+    left: 40px;
+
+    &:before {
+      left: 50px;
+    }
+  }
+
+  &.right {
+    right: 42px;
+    &:before {
+      right: 50px;
+    }
+  }
+
+  &.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 22px;
+    margin-right: -3px;
+
+    p {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      letter-spacing: 0.1em;
+      text-align: center;
+    }
+  }
+
+  &.icons a {
+    font-size: 22px;
+    display: block;
+    margin-top: 7px;
+  }
+}

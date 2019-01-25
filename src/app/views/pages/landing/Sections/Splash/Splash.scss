@@ -1,0 +1,49 @@
+@import '../../../../../assets/styles/settings/colors';
+
+.splash {
+  height: 100%;
+
+  .identityContainer {
+    display: inline-block;
+    padding: 30px;
+
+    margin-left: 15%;
+    margin-top: 200px;
+
+    font-weight: 500;
+    text-align: left;
+
+    > h1, > h2, > h3 {
+      margin: 0;
+      font-family: 'Ubuntu', sans-serif;
+    }
+
+    > h1 {
+      color: $text_color_strong;
+      font-size: 55px;
+      margin-left: -5px;
+    }
+
+    > h2 {
+      font-size: 35px;
+      font-weight: 500;
+      margin-top: 20px;
+    }
+
+    > h3 {
+      color: #00c4ff;
+    }
+
+    > p {
+      margin-top: 50px;
+      max-width: 500px;
+      line-height: 1.5em;
+      color: $text_color;
+
+      > strong {
+        color: $accent_color;
+        font-weight: normal;
+      }
+    }
+  }
+}

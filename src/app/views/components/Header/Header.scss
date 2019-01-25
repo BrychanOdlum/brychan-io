@@ -1,0 +1,37 @@
+@import '../../../assets/styles/arrayStyle';
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 100px;
+  background: rgba(2,25,45, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  ul.navMenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    line-height:75px;
+
+    &.pullRight {
+      float:right
+    }
+
+    > li {
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+
+      &.navBrand a {
+        color: #00c4ff;
+        font-weight: 400;
+        font-size: 18px;
+        font-family: 'Ubuntu', sans-serif;
+      }
+    }
+  }
+}
