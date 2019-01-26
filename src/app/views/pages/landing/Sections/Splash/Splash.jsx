@@ -8,7 +8,7 @@ export default function Splash() {
   return (
     <section className={classes.splash}>
       <div className={classes.identityContainer}>
-        <h3>Hi, my name is...</h3>
+        <h3>Hi, my name is</h3>
         <h1>Brychan Bennett-Odlum;</h1>
         <h2>I create thoughtful websites and delightful apps.</h2>
 
