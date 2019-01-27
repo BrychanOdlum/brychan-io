@@ -17,7 +17,7 @@ export default function Experience() {
             <div className={classes.entry}>
               <div className={classes.title}>
                 <h3>{e.position}</h3>
-                <h4>{`${e.position}; ${e.location} - ${e.time}`}</h4>
+                <h4>{`${e.company}; ${e.location} - ${e.time}`}</h4>
               </div>
               <ul className={classes.achievements}>
                 {e.achievements.map(a => (

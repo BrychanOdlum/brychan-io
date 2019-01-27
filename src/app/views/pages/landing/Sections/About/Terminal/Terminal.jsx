@@ -2,19 +2,12 @@ import React from 'react';
 import cx from 'classnames';
 
 import classes from './Terminal.scss';
+import Window from '../../../../../components/Window/Window';
 
 export default function Terminal() {
   return (
-    <div className={classes.terminal}>
-      <div className={classes.titleBar}>
-        <div className={classes.trafficLights}>
-          <div className={cx(classes.trafficLight, classes.close)} />
-          <div className={cx(classes.trafficLight, classes.min)} />
-          <div className={cx(classes.trafficLight, classes.max)} />
-        </div>
-        <div className={classes.title}>brychan@10.0.1.52: bash</div>
-      </div>
-      <div className={classes.contentArea}>
+    <Window title={'brychan@10.0.1.52: bash'}>
+      <div className={classes.terminalArea}>
         <div className={classes.command}>$ cat /home/brychan/README.txt</div>
         <div className={classes.response}>
           I am working as a Software Engineer for Cisco in San Jose helping to develop a large-scale
@@ -27,7 +20,9 @@ export default function Terminal() {
           stack engineer. I have experience developing scalable backend services for large-scale
           applications, and also greatly enjoy designing beautiful user interfaces.
         </div>
-        <div><br /></div>
+        <div>
+          <br />
+        </div>
         <div className={classes.command}>$ ls /home/brychan/skills</div>
         <div className={classes.response}>
           <span>Swift</span>
@@ -39,9 +34,11 @@ export default function Terminal() {
           <span>HTML</span>
           <span>CSS</span>
         </div>
-        <div><br /></div>
+        <div>
+          <br />
+        </div>
         <div className={classes.command}>$ exit</div>
       </div>
-    </div>
+    </Window>
   );
 }

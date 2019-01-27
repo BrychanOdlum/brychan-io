@@ -1,15 +1,19 @@
 import React from 'react';
 
-import Settings from '../../../../../settings';
-
 import classes from './Projects.scss';
-import Terminal from '../../../../components/Terminal/Terminal';
 import Title from '../../../../components/Title/Title';
+import Project from './Project/Project';
+
+import Settings from '../../../../../settings';
 
 export default function Projects() {
   return (
     <section className={classes.about}>
       <Title title={"🛠 A few projects I've worked on."} alignLeft />
+
+      {Settings.projects.map((project, i) => (
+        <Project project={project} inverseAlignment={i % 2 === 0} />
+      ))}
     </section>
   );
 }

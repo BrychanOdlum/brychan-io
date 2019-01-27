@@ -1,0 +1,25 @@
+.terminalArea {
+  background: #262626;
+  border-radius: 0 0 5px 5px;
+  padding: 5px;
+  color: #ffffff;
+  font-family: 'PT Mono', monospace;
+  font-weight: 300;
+  font-size: 0.8em;
+  line-height: 1.5em;
+
+  > div {
+    &.command {
+      color: #ccc;
+      font-style: italic;
+    }
+
+    &.response {
+
+    }
+
+    > span {
+      margin-right: 30px;
+    }
+  }
+}

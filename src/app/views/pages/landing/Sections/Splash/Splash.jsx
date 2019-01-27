@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 
-import Settings from '../../../../../settings';
-
 import classes from './Splash.scss';
+import Settings from '../../../../../settings';
 
 export default class Splash extends Component {
   constructor(props) {
@@ -37,9 +36,11 @@ export default class Splash extends Component {
   }
 
   render() {
+    const opacity = 1 - (this.state.scrollProgress / 2.5);
     const styles = {
-      opacity: 1 - (this.state.scrollProgress / 2.5),
+      opacity,
       marginTop: 50 - (this.state.scrollProgress * 30),
+      pointerEvents: opacity > 0.1 ? 'auto' : 'auto',
     };
 
     return (
@@ -49,7 +50,7 @@ export default class Splash extends Component {
           <h1>Brychan Bennett-Odlum</h1>
           <h2>I create powerful systems and delightful apps.</h2>
 
-          <p dangerouslySetInnerHTML={{ __html: Settings.biography }}/>
+          <p dangerouslySetInnerHTML={{ __html: Settings.biography }} />
 
           <br/>
           <br/>

@@ -6,7 +6,7 @@ import Title from '../../../../components/Title/Title';
 export default function Contact() {
   return (
     <section className={classes.contact}>
-      <Title title={"📨 Get in touch with me."} alignRight />
+      <Title title={'📨 Get in touch with me.'} alignRight />
     </section>
   );
 }

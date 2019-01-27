@@ -39,9 +39,7 @@ class Tabs extends React.Component {
             );
           })}
         </div>
-        <div className={classes.tabArea}>
-          {tabs[selectedIndex]}
-        </div>
+        <div className={classes.tabArea}>{tabs[selectedIndex]}</div>
       </div>
     );
   }

@@ -1,0 +1,89 @@
+@import '../../../../../../assets/styles/settings/colors';
+
+.project {
+  width: 80%;
+  max-width: 950px;
+  margin: 75px auto;
+  display: flex;
+
+  .windowContainer {
+    width: 60%;
+  }
+
+  .windowPreview {
+    border-radius: 0 0 5px 5px;
+    display: block;
+    width: 100%;
+  }
+
+  .detailsContainer {
+    width: 40%;
+    position: relative;
+
+    > div {
+      position: absolute;
+      right: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 120%;
+      text-align: right;
+
+      .nameContainer {
+        h1 {
+          margin-right: 15px;
+          font-size: 1.75em;
+          color: $text_color_strong;
+        }
+      }
+
+      .linkContainer {
+        a {
+          margin-right: 15px;
+          margin-top: 2px;
+          font-size: 1em;
+          width: auto;
+        }
+      }
+
+      .descriptionContainer {
+        margin: 0 -15px;
+        p {
+          margin-top: 15px;
+          background: rgba(lighten($text_color, 62%), 0.95);
+          padding: 15px 10px;
+          font-size: 0.95em;
+        }
+      }
+
+
+
+      div.skills {
+        margin-top: 15px;
+
+        > span {
+          font-size: 0.8em;
+
+          &:not(:last-child):after {
+            content: '-';
+            color: lighten($text_color, 40%);
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+  }
+
+  &.inverseAlign {
+    flex-direction: row-reverse;
+
+    .detailsContainer {
+      > div {
+        left: 0;
+        right: auto;
+        text-align: left;
+      }
+    }
+  }
+}
