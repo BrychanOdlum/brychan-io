@@ -1,0 +1,36 @@
+@import '../../../assets/styles/settings/colors';
+
+.title {
+  margin: auto auto;
+  display: flex;
+  width: 75%;
+  max-width: 850px;
+  margin-bottom: 40px;
+  align-items: center;
+
+
+  > h2 {
+    margin: 0 20px;
+    color: $text_color_strong
+  }
+
+  &:before, &:after {
+    content: '';
+    display: block;
+    background: rgba($text_color, 0.2);
+    height: 1px;
+    flex: 1;
+  }
+
+  &.alignLeft {
+    &:before {
+      max-width: 80px;
+    }
+  }
+
+  &.alignRight {
+    &:after {
+      max-width: 80px;
+    }
+  }
+}

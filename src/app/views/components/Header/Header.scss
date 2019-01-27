@@ -6,8 +6,10 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 100;
   padding: 0 100px;
-  background: $background_color rgba($background_color, 0.75);
+  background: $background_color;
+  background: rgba($background_color, 0.75);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 

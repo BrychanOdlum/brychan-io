@@ -1,0 +1,37 @@
+@import '../../../../../../assets/styles/settings/colors';
+
+.tabsArea {
+  width: 50%;
+  margin: auto;
+  display: flex;
+
+  .tabs {
+    border-right: solid 2px rgba($text_color, 0.2);
+    height: 200px;
+
+    .tab {
+      padding: 10px 15px;
+      cursor: pointer;
+      display: block;
+      font-size: 0.9em;
+      font-weight: 600;
+      text-align: right;
+      border-right: solid 2px transparent;
+      margin-right: -2px;
+
+      &:hover {
+        border-right: solid 2px rgba($text_color_strong, 0.4);
+      }
+
+      &.selected {
+        border-right: solid 2px $accent_color;
+        color: $accent_color;
+      }
+    }
+  }
+
+  .tabArea {
+    flex: 1;
+    padding: 10px 20px;
+  }
+}

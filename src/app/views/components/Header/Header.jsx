@@ -8,7 +8,8 @@ export default function Header() {
     <nav className={classes.nav}>
       <ul className={classes.navMenu}>
         <li className={classes.navBrand}>
-          <a href="#">Brychan</a>
+          <a href="#">Brychan.io
+          </a>
         </li>
       </ul>
       <ul className={cx(classes.navMenu, classes.pullRight, classes.arrayStyle)}>

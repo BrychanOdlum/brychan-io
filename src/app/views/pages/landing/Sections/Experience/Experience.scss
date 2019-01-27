@@ -1,0 +1,38 @@
+@import '../../../../../assets/styles/settings/colors';
+
+.experience {
+  padding: 50px 0;
+
+  .entry {
+    .title {
+      h3 {
+        font-weight: 400;
+        margin-bottom: 5px;
+      }
+
+      h4 {
+        font-weight: 400;
+        font-size: 0.8em;
+        color: $text_color;
+
+      }
+    }
+
+    .achievements {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      padding-left: 10px;
+
+      > li {
+        margin-top: 10px;
+        &:before {
+          content: '-';
+          font-weight: 600;
+          position: absolute;
+          margin-left: -10px;
+        }
+      }
+    }
+  }
+}

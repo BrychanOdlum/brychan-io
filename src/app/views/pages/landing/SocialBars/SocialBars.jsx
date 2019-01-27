@@ -16,12 +16,6 @@ export default function SocialBars() {
         <a href="#">
           <i className={'fas fa-envelope'} />
         </a>
-        <a href="#">
-          <i className={'fab fa-facebook'} />
-        </a>
-        <a href="#">
-          <i className={'fab fa-angellist'} />
-        </a>
       </div>
       <div className={cx(classes.bottomSocial, classes.right, classes.text)}>
         <p>
