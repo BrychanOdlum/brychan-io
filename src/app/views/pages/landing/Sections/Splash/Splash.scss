@@ -41,7 +41,7 @@
     }
 
     > h3 {
-      color: $accent_color;
+      color: mix($background_color, $text_color, 30%);
       margin-bottom: 25px;
       font-weight: 400;
     }
@@ -55,6 +55,12 @@
       > strong {
         color: $text_color_strong;
         font-weight: 600;
+      }
+    }
+
+    .actionButtons {
+      > button:not(:first-child) {
+        margin-left: 10px;
       }
     }
 

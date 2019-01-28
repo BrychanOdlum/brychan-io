@@ -1,0 +1,20 @@
+@import '../../../../../assets/styles/settings/colors';
+
+.footer {
+  background: rgba($text_color, 0.125);
+  padding: 20px 0;
+  text-align: center;
+
+  i {
+    color: #ff3366;
+    font-size: 0.8em;
+  }
+
+  a {
+    color: $text_color_strong;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

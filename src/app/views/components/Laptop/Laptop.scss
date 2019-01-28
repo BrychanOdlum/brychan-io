@@ -10,14 +10,16 @@
   border-radius: 5px;
 
   .screen {
-    background: #262626;
+    background: #161616;
     color: #f0f0f0;
-    border-radius: 12px 12px 0 0;
+    border-radius: 10px 10px 0 0;
     text-align: center;
-    padding: 15px 15px 5px 15px;
+    padding: 10px 10px 5px 10px;
     box-shadow: 0 5px 10px -2px rgba(0,0,0,0.45);
-    border: solid 2px #111;
+    border: solid 2px #000;
     border-bottom: none;
+    // transform: perspective(360px) rotateX(-45deg) scale(1, 0.125);
+    // transform-origin: bottom center;
 
     .productName {
       margin-top: 5px;
@@ -31,7 +33,7 @@
       border-radius: 5px 5px 3px 3px;
 
       > * {
-        border-radius: 5px 5px 3px 3px;
+        border-radius: 4px 4px 3px 3px;
       }
 
       img {
@@ -43,26 +45,42 @@
 
   .keyboardArea {
     position: relative;
-    padding-bottom: 4%;
+    padding-bottom: 3.5%;
     background: linear-gradient(to bottom, rgba(90,90,90,1) 0%,rgba(70, 70, 70, 1) 100%);
     margin: 0 -5%;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-    border-bottom-left-radius: 18% 47%;
-    border-bottom-right-radius: 18% 47%;
+    border-bottom-left-radius: 18% 37%;
+    border-bottom-right-radius: 18% 37%;
     color: #333;
     box-shadow: 0 5px 10px -2px rgba(0,0,0,0.45);
 
     &:before {
       position: absolute;
-      width: 20%;
-      left: 50%;
       top: 0;
+      left: 0;
+      height: 63%;
+      width: 100%;
+      background: rgba(100,100,100,0.45);
+      border-radius: 3px 3px 0 0;
       content: '';
-      height: 40%;
-      background: linear-gradient(to bottom, rgba(10,10,10,0.3) 0%,rgba(30, 30, 30, 0.3) 100%);
-      border-radius: 0 0 5px 5px;
+    }
+
+    &:after {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 20%;
+      height: 35%;
       transform: translateX(-50%);
+      content: '';
+      background: linear-gradient(
+        to bottom,
+        rgba(10, 10, 10, 0.3) 0%,
+        rgba(30, 30, 30, 0.3) 100%
+      );
+      border-radius: 0 0 5px 5px;
+      box-shadow: inset 0px -1px 5px 0px rgba(0, 0, 0, 0.15);
     }
   }
 }

@@ -50,7 +50,7 @@
 
         p {
           margin-top: 15px;
-          background: rgba(lighten($text_color, 62%), 0.95);
+          background: rgba(mix($background_color, $text_color, 97%), 0.95);
           padding: 15px 10px;
           font-size: 0.95em;
         }

@@ -2,12 +2,28 @@
 
 .contact {
   padding: 50px 0;
-  .contactForm {
+
+  .contactDetails {
     margin: auto;
     width: 60%;
     max-width: 750px;
 
     border: dashed 1px rgba($text_color, 0.3);
-    padding: 40px 20px;
+    padding: 40px 50px;
+
+    text-align: center;
+
+    p {
+      font-size: 0.9em;
+      line-height: 1.4em;
+      font-weight: 400;
+      margin-bottom: 41px;
+    }
+
+    button {
+      background: $text_color_strong;
+      color: $background_color;
+      border: none;
+    }
   }
 }

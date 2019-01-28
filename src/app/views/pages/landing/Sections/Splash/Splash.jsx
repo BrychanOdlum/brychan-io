@@ -55,7 +55,10 @@ export default class Splash extends Component {
           <br/>
           <br/>
 
-          <button onClick="">Get in touch</button>
+          <div className={classes.actionButtons}>
+            <button onClick="">Get in touch</button>
+            <button onClick="">Grab my résumé</button>
+          </div>
         </div>
       </section>
     );

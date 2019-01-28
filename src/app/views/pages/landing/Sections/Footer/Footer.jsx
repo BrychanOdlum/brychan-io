@@ -1,59 +1,17 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import cx from 'classnames';
 
 import classes from './Footer.scss';
 
-function Project(props) {
-  const { project } = props;
-
-  const preview = (
-    <img src={project.preview} alt={`${project.name} preview`} className={classes.windowPreview} />
-  );
-
-  let previewDisplay;
-  switch (project.previewType) {
-    case 'laptop':
-      previewDisplay = <Laptop title={project.previewTitle}>{preview}</Laptop>;
-      break;
-    default:
-      previewDisplay = <Window title={project.previewTitle}>{preview}</Window>;
-  }
-
+export default function Project(props) {
   return (
-    <div className={cx(classes.project, { [classes.inverseAlign]: props.inverseAlignment })}>
-      <div className={classes.previewContainer}>{previewDisplay}</div>
-      <div className={classes.detailsContainer}>
-        <div>
-          <div className={classes.nameContainer}>
-            <h1>{project.name}</h1>
-          </div>
-          {project.url && (
-            <div className={classes.linkContainer}>
-              <a href={project.url}>{project.url}</a>
-            </div>
-          )}
-          <div className={classes.descriptionContainer}>
-            <p>{project.description}</p>
-          </div>
-          <div className={classes.skills}>
-            {project.skills.map(skill => (
-              <span>{skill}</span>
-            ))}
-          </div>
-        </div>
-      </div>
+    <div className={classes.footer}>
+      <span>
+        {'Designed with '}
+        <i className={'fas fa-heart'} />
+        {' by '}
+        <a href={'https://brychan.io/'}>brychan.io</a>
+        {'.'}
+      </span>
     </div>
   );
 }
-
-Project.propTypes = {
-  project: PropTypes.object.isRequired,
-  inverseAlignment: PropTypes.bool,
-};
-
-Project.defaultProps = {
-  inverseAlignment: false,
-};
-
-export default Project;
