@@ -11,14 +11,14 @@ import Footer from './Sections/Footer/Footer';
 function Landing() {
   return (
     <>
-      <SocialBars />
-
       <main className={classes.mainContent}>
         <Splash />
         <About />
         <Experience />
         <Projects />
         <Contact />
+
+        <SocialBars />
         <Footer />
       </main>
     </>

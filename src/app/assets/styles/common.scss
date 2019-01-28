@@ -9,6 +9,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  font-size: 16px;
   margin: 0;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
@@ -57,4 +58,11 @@ button {
 strong {
   color: #00c4ff;
   font-weight: normal;
+}
+
+
+@media (max-width: 1000px) {
+  body {
+    font-size: 14px;
+  }
 }

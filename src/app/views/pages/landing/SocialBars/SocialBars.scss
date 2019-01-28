@@ -50,3 +50,31 @@
     margin-top: 18px;
   }
 }
+
+@media (max-width: 600px) {
+  .bottomSocial {
+    position: initial;
+
+    &:before {
+      display: none;
+    }
+
+    &.text {
+      display: none;
+    }
+
+    &.icons {
+      width: 100%;
+      text-align: center;
+      margin: -35px 0 30px 0;
+
+      a {
+        display: inline-block;
+
+        &:not(:first-child) {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}

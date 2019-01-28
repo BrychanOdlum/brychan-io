@@ -84,3 +84,46 @@
     }
   }
 }
+
+@media (max-width: 900px) {
+  .project {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .project {
+    flex-direction: column-reverse !important;
+    margin: auto;
+    margin-top: 80px;
+
+    .previewContainer {
+      width: 85%;
+      margin: auto;
+    }
+
+    .detailsContainer {
+      width: 100%;
+
+      > div {
+        position: initial;
+        width: 100%;
+        text-align: center !important;
+
+        .descriptionContainer {
+          margin: 0;
+
+          p {
+            background: none;
+            padding: 0;
+          }
+        }
+      }
+    }
+
+    div.skills {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+}
