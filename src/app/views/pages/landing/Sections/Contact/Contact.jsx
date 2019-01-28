@@ -7,6 +7,10 @@ export default function Contact() {
   return (
     <section className={classes.contact}>
       <Title title={'📨 Get in touch with me.'} alignRight />
+
+      <div className={classes.contactForm}>
+        abc
+      </div>
     </section>
   );
 }

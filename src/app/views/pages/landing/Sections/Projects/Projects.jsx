@@ -5,6 +5,7 @@ import Title from '../../../../components/Title/Title';
 import Project from './Project/Project';
 
 import Settings from '../../../../../settings';
+import Laptop from '../../../../components/Laptop/Laptop';
 
 export default function Projects() {
   return (

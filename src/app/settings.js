@@ -1,3 +1,4 @@
+import previewMacenger from './assets/images/macenger.jpg';
 import previewMusish from './assets/images/musish.jpg';
 import previewNeene from './assets/images/neene1.jpg';
 
@@ -48,26 +49,36 @@ export default {
       time: 'January 2010 - March 2016',
       achievements: [
         '[Dec 2016] Worked freelance for Leet, Inc., a large-scale cloud game server host developing their website and iOS app (which is used by over a million subscribers to the platform) single handedly based on a provided specification and API routes.',
-        '[2010-2015] GiekMafia, a text-based online multiplayer RPG game attracting over 25,000 players written in PHP with a front-end designed in Photoshop and implemented in HTML, CSS, and JavaScript. Later versions of the game migrated to a Node.js backend shortly before closing.\n',
-        '[2013] Developed a tower defence game for iPad on top of Cocos2D. The project was never released publicly. Core game mechanics were implemented teaching me many programming experiences.',
       ],
     },
   ],
   projects: [
     {
+      name: 'Macenger (coming soon)',
+      url: null,
+      preview: previewMacenger,
+      previewTitle: 'Macenger',
+      previewType: 'laptop',
+      description:
+        'Developing an open source Facebook Messenger client for macOS natively with Swift. The project is spanning into the development of multiple new frameworks, soon to be released on Github.',
+      skills: ['Swift', 'GraphQL', 'Reverse Engineering'],
+    },
+    {
       name: 'Musish',
-      defunct: false,
       url: 'https://musi.sh/',
       preview: previewMusish,
+      previewTitle: 'https://musi.sh/',
+      previewType: 'window',
       description:
-        'Led development of the open source Apple Music client for your web browser supporting over 50,000 users. Built with React, MusicKit JS, the Apple Music API, and a lightweight serverless backend.',
+        'Led development of the open source Apple Music client for your web browser supporting over 50,000 users. Built with React, MusicKit JS, the Apple Music API, and a serverless backend powered by AWS.',
       skills: ['React', 'JavaScript', 'CSS', 'Serverless', 'AWS Lambda'],
     },
     {
       name: 'Neene',
-      defunct: true,
       url: null,
       preview: previewNeene,
+      previewTitle: 'Neene | Discontinued',
+      previewType: 'window',
       description:
         "A social network for artists focused on showing off their art rather than their profiles. Responsible for implementing the HTML5, CSS3, and JS UI from as well as the service's backend in PHP and Node.js.",
       skills: ['PHP', 'HTML', 'jQuery', 'Node.js', 'MySQL'],

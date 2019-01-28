@@ -1,0 +1,68 @@
+.laptopContainer {
+  width: 100%;
+  margin: auto;
+}
+
+.laptop {
+  margin: auto auto;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+
+  .screen {
+    background: #262626;
+    color: #f0f0f0;
+    border-radius: 12px 12px 0 0;
+    text-align: center;
+    padding: 15px 15px 5px 15px;
+    box-shadow: 0 5px 10px -2px rgba(0,0,0,0.45);
+    border: solid 2px #111;
+    border-bottom: none;
+
+    .productName {
+      margin-top: 5px;
+      color: #666;
+      font-weight: 500;
+      font-size: 0.6em;
+    }
+
+    .display {
+      background: #cccccc;
+      border-radius: 5px 5px 3px 3px;
+
+      > * {
+        border-radius: 5px 5px 3px 3px;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+
+  .keyboardArea {
+    position: relative;
+    padding-bottom: 4%;
+    background: linear-gradient(to bottom, rgba(90,90,90,1) 0%,rgba(70, 70, 70, 1) 100%);
+    margin: 0 -5%;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 18% 47%;
+    border-bottom-right-radius: 18% 47%;
+    color: #333;
+    box-shadow: 0 5px 10px -2px rgba(0,0,0,0.45);
+
+    &:before {
+      position: absolute;
+      width: 20%;
+      left: 50%;
+      top: 0;
+      content: '';
+      height: 40%;
+      background: linear-gradient(to bottom, rgba(10,10,10,0.3) 0%,rgba(30, 30, 30, 0.3) 100%);
+      border-radius: 0 0 5px 5px;
+      transform: translateX(-50%);
+    }
+  }
+}

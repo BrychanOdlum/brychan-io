@@ -2,4 +2,12 @@
 
 .contact {
   padding: 50px 0;
+  .contactForm {
+    margin: auto;
+    width: 60%;
+    max-width: 750px;
+
+    border: dashed 1px rgba($text_color, 0.3);
+    padding: 40px 20px;
+  }
 }

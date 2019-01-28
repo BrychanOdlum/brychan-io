@@ -2,10 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
-import classes from './Project.scss';
-import Window from '../../../../../components/Window/Window';
-import Title from '../Projects';
-import Laptop from '../../../../../components/Laptop/Laptop';
+import classes from './Footer.scss';
 
 function Project(props) {
   const { project } = props;

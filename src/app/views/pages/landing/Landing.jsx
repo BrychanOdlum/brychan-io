@@ -18,6 +18,7 @@ function Landing() {
         <Experience />
         <Projects />
         <Contact />
+        <Footer />
       </main>
     </>
   );

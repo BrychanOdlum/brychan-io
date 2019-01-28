@@ -6,7 +6,7 @@
   margin: 75px auto;
   display: flex;
 
-  .windowContainer {
+  .previewContainer {
     width: 60%;
   }
 
@@ -32,7 +32,6 @@
 
       .nameContainer {
         h1 {
-          margin-right: 15px;
           font-size: 1.75em;
           color: $text_color_strong;
         }
@@ -40,7 +39,6 @@
 
       .linkContainer {
         a {
-          margin-right: 15px;
           margin-top: 2px;
           font-size: 1em;
           width: auto;
@@ -49,6 +47,7 @@
 
       .descriptionContainer {
         margin: 0 -15px;
+
         p {
           margin-top: 15px;
           background: rgba(lighten($text_color, 62%), 0.95);
@@ -56,8 +55,6 @@
           font-size: 0.95em;
         }
       }
-
-
 
       div.skills {
         margin-top: 15px;

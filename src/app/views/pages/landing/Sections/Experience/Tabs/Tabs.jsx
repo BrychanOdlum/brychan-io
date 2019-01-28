@@ -19,9 +19,12 @@ class Tabs extends React.Component {
 
     const tabs = React.Children.toArray(children);
 
+    const indicatorOffset = selectedIndex * 40;
+
     return (
       <div className={classes.tabsArea}>
         <div className={classes.tabs}>
+          <div className={classes.tabIndicator} style={{ marginTop: indicatorOffset }} />
           {tabs.map((tab, index) => {
             const { name: tabName } = tab.props;
             return (
@@ -34,7 +37,7 @@ class Tabs extends React.Component {
                   this.setState({ selectedIndex: index });
                 }}
               >
-                {tabName}
+                <span>{tabName}</span>
               </div>
             );
           })}
