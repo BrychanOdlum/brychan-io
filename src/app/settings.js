@@ -60,7 +60,7 @@ export default {
       previewTitle: 'Macenger',
       previewType: 'laptop',
       description:
-        'Developing an open source Facebook Messenger client for macOS natively with Swift. The project is spanning into the development of multiple new frameworks, soon to be released on Github.',
+        'Developing an open source Facebook Messenger client for macOS natively with Swift. The project is spawning the development of multiple new frameworks, soon to be released on Github.',
       skills: ['Swift', 'GraphQL', 'Reverse Engineering'],
     },
     {
