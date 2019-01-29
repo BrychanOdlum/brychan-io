@@ -5,7 +5,7 @@ import Title from '../../../../components/Title/Title';
 
 export default function Contact() {
   return (
-    <section className={classes.contact}>
+    <section className={classes.contact} id={'contact'}>
       <Title title={'📨 Get in touch with me.'} alignRight />
 
       <div className={classes.contactDetails}>
@@ -18,7 +18,7 @@ export default function Contact() {
           I will soon be seeking employment opportunities for when I graduate in June 2020.
         </p>
 
-        <a href={'mailto:hello@brychan.io'} target={'_blank'}>
+        <a href={'mailto:hello@brychan.io'}>
           <button>Say hello!</button>
         </a>
       </div>

@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 
 import classes from './Splash.scss';
 import Settings from '../../../../../settings';
+import Button from '../../../../components/Button/Button';
+
+import Resume from '../../../../../assets/files/resume.pdf';
 
 export default class Splash extends Component {
   constructor(props) {
@@ -52,12 +55,14 @@ export default class Splash extends Component {
 
           <p dangerouslySetInnerHTML={{ __html: Settings.biography }} />
 
-          <br/>
-          <br/>
+          <br />
+          <br />
 
           <div className={classes.actionButtons}>
-            <button onClick="">Get in touch</button>
-            <button onClick="">Grab my résumé</button>
+            <Button href={'mailto:hello@brychan.io'}>Get in touch</Button>
+            <Button href={Resume} target={'_blank'}>
+              Grab my résumé
+            </Button>
           </div>
         </div>
       </section>

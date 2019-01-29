@@ -15,6 +15,23 @@ body {
   font-weight: 300;
   background: $background_color;
   color: $text_color;
+
+  animation: bodyLoadAnimation ease-out 0.35s;
+  transition: opacity 0.05s;
+
+
+  @keyframes bodyLoadAnimation {
+    0% {
+      // transform: translateX(-100%);
+      opacity: 0;
+      filter: blur(100px);
+    }
+    100% {
+      // transform: translateX(0);
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
 }
 
 a {

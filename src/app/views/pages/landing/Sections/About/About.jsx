@@ -6,7 +6,7 @@ import Title from '../../../../components/Title/Title';
 
 export default function About() {
   return (
-    <section className={classes.about}>
+    <section className={classes.about} id={'about'}>
       <Title title={'😊 A little bit about me.'} alignLeft />
 
       <div className={classes.windowContainer}>

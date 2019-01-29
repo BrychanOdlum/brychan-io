@@ -8,7 +8,7 @@ import Settings from '../../../../../settings';
 
 export default function Projects() {
   return (
-    <section className={classes.projects}>
+    <section className={classes.projects} id={'projects'}>
       <Title title={"🛠 A few projects I've worked on."} alignLeft />
 
       {Settings.projects.map((project, i) => (

@@ -1,0 +1,23 @@
+@import '../../../assets/styles/common';
+
+.button {
+  -webkit-appearance: none;
+  background: none;
+  border: solid 1px #00c4ff;
+  padding: 10px 15px;
+  color: #00c4ff;
+  font-size: 14px;
+  font-family: 'Fira Mono', monospace;
+  cursor: pointer;
+  margin: 0;
+
+  &:hover {
+    background: #00c4ff;
+    color: $background_color;
+  }
+
+  &:active {
+    margin-top: 1px;
+    margin-bottom: -1px;
+  }
+}

@@ -9,7 +9,7 @@ import Settings from '../../../../../settings';
 
 export default function Experience() {
   return (
-    <section className={classes.experience}>
+    <section className={classes.experience} id={'experience'}>
       <Title title={'💼 Some of my experience.'} alignRight />
       <Tabs>
         {Settings.experience.map(e => (

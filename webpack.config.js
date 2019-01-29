@@ -19,6 +19,12 @@ Encore.setOutputPath('build/')
       config.localIdentName = '[name]__[local]--[sha1:hash:hex:4]';
     }
   })
+  .addLoader(
+    {
+      test: /\.(pdf|zip)$/,
+      use: 'file-loader?name=[path][name].[ext]',
+    }
+  )
   .enableReactPreset()
   .enableSassLoader();
 

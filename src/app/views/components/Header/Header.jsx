@@ -13,10 +13,10 @@ export default function Header() {
         </li>
       </ul>
       <ul className={cx(classes.navMenu, classes.pullRight, classes.arrayStyle)}>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Experience</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Get in touch</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Get in touch</a></li>
       </ul>
     </nav>
   );

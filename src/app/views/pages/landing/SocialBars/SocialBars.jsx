@@ -19,7 +19,7 @@ export default function SocialBars() {
       </div>
       <div className={cx(classes.bottomSocial, classes.right, classes.text)}>
         <p>
-          <a href={'mailto:hello@brychan.io'} target={'_blank'}>hello@brychan.io</a>
+          <a href={'mailto:hello@brychan.io'}>hello@brychan.io</a>
         </p>
       </div>
     </>

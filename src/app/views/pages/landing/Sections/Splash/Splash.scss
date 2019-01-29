@@ -8,14 +8,11 @@
 
   .identityContainer {
     display: inline-block;
-    z-index: -1;
     padding: 30px;
     margin-top: 50px;
     margin-left: 10%;
     font-weight: 500;
     text-align: left;
-    animation: identityContainerAnimation ease-out 0.25s;
-    transition: opacity 0.05s;
 
     > h1, > h2, > h3 {
       margin: 0;
@@ -60,22 +57,9 @@
     .actionButtons {
       margin-left: -5px;
 
-      button {
+      button, a {
+        white-space: nowrap;
         margin: 5px 5px;
-      }
-    }
-
-
-    @keyframes identityContainerAnimation {
-      0% {
-        transform: translateX(-100%);
-        opacity: 0;
-        filter: blur(100px);
-      }
-      100% {
-        transform: translateX(0);
-        filter: blur(0px);
-        opacity: 1;
       }
     }
   }

@@ -33,7 +33,8 @@
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-router-dom": "^4.3.1",
-    "sass-loader": "^7.1.0"
+    "sass-loader": "^7.1.0",
+    "webpack-loader": "^0.0.1"
   },
   "scripts": {
     "start": "encore dev-server --hot --port 8081",
