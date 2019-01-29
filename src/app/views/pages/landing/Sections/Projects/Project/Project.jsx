@@ -4,7 +4,6 @@ import cx from 'classnames';
 
 import classes from './Project.scss';
 import Window from '../../../../../components/Window/Window';
-import Title from '../Projects';
 import Laptop from '../../../../../components/Laptop/Laptop';
 
 function Project(props) {

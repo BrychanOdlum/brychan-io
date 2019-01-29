@@ -5,11 +5,10 @@ import Title from '../../../../components/Title/Title';
 import Project from './Project/Project';
 
 import Settings from '../../../../../settings';
-import Laptop from '../../../../components/Laptop/Laptop';
 
 export default function Projects() {
   return (
-    <section className={classes.about}>
+    <section className={classes.projects}>
       <Title title={"🛠 A few projects I've worked on."} alignLeft />
 
       {Settings.projects.map((project, i) => (

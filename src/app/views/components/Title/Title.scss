@@ -18,6 +18,7 @@
     content: '';
     display: block;
     background: rgba($text_color, 0.2);
+    min-width: 10px;
     height: 1px;
     flex: 1;
   }
@@ -32,5 +33,11 @@
     &:after {
       max-width: 80px;
     }
+  }
+}
+
+@media (max-width: 700px) {
+  .title {
+    width: 90%;
   }
 }

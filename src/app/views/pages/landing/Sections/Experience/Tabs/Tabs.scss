@@ -1,7 +1,8 @@
 @import '../../../../../../assets/styles/settings/colors';
 
 .tabsArea {
-  width: 50%;
+  width: 95%;
+  max-width: 750px;
   margin: auto;
   display: flex;
 
@@ -51,5 +52,19 @@
   .tabArea {
     flex: 1;
     padding: 10px 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .tabsArea {
+    width: 100%;
+
+    .tabs {
+      width: 80px;
+    }
+
+    .tabArea {
+      padding: 10px 10px;
+    }
   }
 }

@@ -2,18 +2,16 @@
 
 .splash {
   min-height: 100%;
-  padding-top: 100px;
-  padding-bottom: 250px;
+  padding: 100px 25px 250px 25px;
   display: flex;
   align-items: center;
 
   .identityContainer {
-    position: fixed;
     display: inline-block;
     z-index: -1;
     padding: 30px;
     margin-top: 50px;
-    margin-left: 15%;
+    margin-left: 10%;
     font-weight: 500;
     text-align: left;
     animation: identityContainerAnimation ease-out 0.25s;
@@ -60,8 +58,10 @@
     }
 
     .actionButtons {
-      > button:not(:first-child) {
-        margin-left: 10px;
+      margin-left: -5px;
+
+      button {
+        margin: 5px 5px;
       }
     }
 
@@ -107,6 +107,9 @@
   .splash {
     .identityContainer {
       margin-left: 2%;
+
+      p {
+      }
     }
   }
 }

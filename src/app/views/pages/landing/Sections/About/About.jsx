@@ -1,7 +1,5 @@
 import React from 'react';
 
-import Settings from '../../../../../settings';
-
 import classes from './About.scss';
 import Terminal from './Terminal/Terminal';
 import Title from '../../../../components/Title/Title';

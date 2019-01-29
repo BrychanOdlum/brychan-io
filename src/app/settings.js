@@ -54,7 +54,7 @@ export default {
   ],
   projects: [
     {
-      name: 'Macenger (coming soon)',
+      name: 'Macenger (tbd)',
       url: null,
       preview: previewMacenger,
       previewTitle: 'Macenger',

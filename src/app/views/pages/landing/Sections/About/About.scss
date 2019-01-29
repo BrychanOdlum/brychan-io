@@ -1,12 +1,20 @@
 @import '../../../../../assets/styles/settings/colors';
 
 .about {
-  padding: 50px 0;
+  padding: 50px 25px;
   margin-top: -225px; // For testing, for now.
 
   .windowContainer {
-    width: 60%;
+    width: 80%;
     max-width: 750px;
     margin: auto auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .about {
+    .windowContainer {
+      width: 100%;
+    }
   }
 }

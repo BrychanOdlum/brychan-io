@@ -1,11 +1,11 @@
 @import '../../../../../assets/styles/settings/colors';
 
 .contact {
-  padding: 50px 0;
+  padding: 50px 65px;
 
   .contactDetails {
     margin: auto;
-    width: 60%;
+    width: 80%;
     max-width: 750px;
 
     border: dashed 1px rgba($text_color, 0.3);
@@ -24,6 +24,17 @@
       background: $text_color_strong;
       color: $background_color;
       border: none;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .contact {
+    padding: 50px 25px;
+
+    .contactDetails {
+      width: 100%;
+      padding: 30px 40px;
     }
   }
 }

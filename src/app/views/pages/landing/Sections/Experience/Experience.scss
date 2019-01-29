@@ -1,7 +1,7 @@
 @import '../../../../../assets/styles/settings/colors';
 
 .experience {
-  padding: 50px 0;
+  padding: 50px 65px;
 
   .entry {
     .title {
@@ -34,5 +34,11 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 700px) {
+  .experience {
+    padding: 50px 25px;
   }
 }

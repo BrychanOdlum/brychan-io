@@ -11,7 +11,7 @@ export default class Splash extends Component {
       scrollProgress: 0,
     };
 
-    this.handleWindowScroll = this.handleWindowScroll.bind(this);
+    //this.handleWindowScroll = this.handleWindowScroll.bind(this);
 
     this.ref = React.createRef();
   }
@@ -45,7 +45,7 @@ export default class Splash extends Component {
 
     return (
       <section className={classes.splash} ref={this.ref}>
-        <div className={classes.identityContainer} style={styles}>
+        <div className={classes.identityContainer} style={{}}>
           <h3>Hi, my name is</h3>
           <h1>Brychan Bennett-Odlum</h1>
           <h2>I create powerful systems and delightful apps.</h2>

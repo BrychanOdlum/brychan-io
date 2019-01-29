@@ -1,10 +1,14 @@
 @import '../../../../../../assets/styles/settings/colors';
 
 .project {
-  width: 80%;
+  width: 85%;
   max-width: 950px;
   margin: 75px auto;
   display: flex;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   .previewContainer {
     width: 60%;
@@ -87,7 +91,7 @@
 
 @media (max-width: 900px) {
   .project {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -98,7 +102,7 @@
     margin-top: 80px;
 
     .previewContainer {
-      width: 85%;
+      width: 95%;
       margin: auto;
     }
 
@@ -109,6 +113,12 @@
         position: initial;
         width: 100%;
         text-align: center !important;
+
+        .nameContainer {
+          h1 {
+            font-size: 1.3em;
+          }
+        }
 
         .descriptionContainer {
           margin: 0;

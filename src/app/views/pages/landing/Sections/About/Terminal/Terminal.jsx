@@ -8,7 +8,8 @@ export default function Terminal() {
   return (
     <Window title={'brychan@10.0.1.52: bash'}>
       <div className={classes.terminalArea}>
-        <div className={classes.command}>$ cat /home/brychan/README.txt</div>
+        <div className={classes.command}>$ cd /home/brychan/</div>
+        <div className={classes.command}>$ cat README.txt</div>
         <div className={classes.response}>
           I am working as a Software Engineer for Cisco in San Jose helping to develop a large-scale
           cloud provisioning platform while taking a break from studying at the University of Kent
@@ -23,7 +24,7 @@ export default function Terminal() {
         <div>
           <br />
         </div>
-        <div className={classes.command}>$ ls /home/brychan/skills</div>
+        <div className={classes.command}>$ ls skills/</div>
         <div className={classes.response}>
           <span>Swift</span>
           <span>React</span>
