@@ -18,7 +18,9 @@ export default function Contact() {
           I will soon be seeking employment opportunities for when I graduate in June 2020.
         </p>
 
-        <button>Say hello!</button>
+        <a href={'mailto:hello@brychan.io'} target={'_blank'}>
+          <button>Say hello!</button>
+        </a>
       </div>
     </section>
   );

@@ -7,19 +7,19 @@ export default function SocialBars() {
   return (
     <>
       <div className={cx(classes.bottomSocial, classes.left, classes.icons)}>
-        <a href="#">
+        <a href={'https://github.com/BrychanOdlum'} target={'_blank'}>
           <i className={'fab fa-github'} />
         </a>
-        <a href="#">
+        <a href={'https://www.linkedin.com/in/brychan-bennett-odlum-6b820755'} target={'_blank'}>
           <i className={'fab fa-linkedin'} />
         </a>
-        <a href="#">
+        <a href={'mailto:hello@brychan.io'} target={'_blank'}>
           <i className={'fas fa-envelope'} />
         </a>
       </div>
       <div className={cx(classes.bottomSocial, classes.right, classes.text)}>
         <p>
-          <a href="#">hello@brychan.io</a>
+          <a href={'mailto:hello@brychan.io'} target={'_blank'}>hello@brychan.io</a>
         </p>
       </div>
     </>
