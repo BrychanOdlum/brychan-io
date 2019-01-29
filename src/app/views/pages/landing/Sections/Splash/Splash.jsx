@@ -10,13 +10,12 @@ export default class Splash extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      scrollProgress: 0,
-    };
+    this.scrollProgress = 0;
 
-    //this.handleWindowScroll = this.handleWindowScroll.bind(this);
+    this.handleWindowScroll = this.handleWindowScroll.bind(this);
 
     this.ref = React.createRef();
+    this.identityContainerRef = React.createRef();
   }
 
   componentDidMount() {
@@ -31,24 +30,23 @@ export default class Splash extends Component {
     const totalScrolled = window.pageYOffset;
     const targetScrolled = 100;
 
-    const percentage = totalScrolled / targetScrolled;
+    const scrollProgress = totalScrolled / targetScrolled;
 
-    this.setState({
-      scrollProgress: percentage,
-    });
+    const opacity = 1 - (scrollProgress / 2.5);
+    const marginTop = 50 - (scrollProgress * 30);
+    const pointerEvents = opacity > 0.1 ? 'auto' : 'auto';
+
+    const styles = this.identityContainerRef.current.style;
+
+    styles.opacity = opacity;
+    styles.marginTop = `${Math.round(marginTop)}px`;
+    styles.pointerEvents = pointerEvents;
   }
 
   render() {
-    const opacity = 1 - (this.state.scrollProgress / 2.5);
-    const styles = {
-      opacity,
-      marginTop: 50 - (this.state.scrollProgress * 30),
-      pointerEvents: opacity > 0.1 ? 'auto' : 'auto',
-    };
-
     return (
       <section className={classes.splash} ref={this.ref}>
-        <div className={classes.identityContainer} style={{}}>
+        <div className={classes.identityContainer} ref={this.identityContainerRef}>
           <h3>Hi, my name is</h3>
           <h1>Brychan Bennett-Odlum</h1>
           <h2>I create powerful systems and delightful apps.</h2>

@@ -8,11 +8,14 @@
 
   .identityContainer {
     display: inline-block;
+    position: fixed;
     padding: 30px;
     margin-top: 50px;
     margin-left: 10%;
     font-weight: 500;
     text-align: left;
+    animation: identityContainerAnimation ease-out 0.25s;
+    transition: opacity 0.05s;
 
     > h1, > h2, > h3 {
       margin: 0;
