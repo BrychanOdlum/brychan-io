@@ -29,8 +29,8 @@ export default {
         'Designed, implemented, and maintained server software and game features / content for the rapidly growing Minecraft multiplayer games network owned by Mobcrush and partnered with Microsoft.',
         'Wrote and maintained core game engine, custom event systems, and game world caching to improve server uptime by profiling our .NET server stack to reduce memory leaks, redundant locks, expensive operations, and resolving exceptions.\n',
         'Developed server monitoring software to automatically handle service restarts upon critical exceptions, deadlocks, and other failed health checks to improve uptime and fulfil SLAs provided by Microsoft.',
-        'Rapidly developed functionality and content required to support 10,000+ concurrent users.\nWrote algorithms for generating balanced game inventories, item handling, and other specific tasks.',
-        'Developed a prototype, but now defunct, iOS app to handle payments; defunct due to MS Marketplace.',
+        'Rapidly developed functionality and content required to support 10,000+ concurrent users.\nWrote algorithms for generating balanced game inventories, item handling, and other core game engine routines.',
+        'Developed a prototype iOS app to handle microtransactions; now redundant due to in-built Marketplace.',
       ],
     },
     {
