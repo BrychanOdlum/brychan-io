@@ -4,7 +4,7 @@ import classes from './Splash.scss';
 import Settings from '../../../../../settings';
 import Button from '../../../../components/Button/Button';
 
-import Resume from '../../../../../assets/files/resume.pdf';
+import Resume from '../../../../../../../files/resume.pdf';
 
 export default class Splash extends Component {
   constructor(props) {

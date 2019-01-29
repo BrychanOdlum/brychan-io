@@ -13,7 +13,7 @@ export default function SocialBars() {
         <a href={'https://www.linkedin.com/in/brychan-bennett-odlum-6b820755'} target={'_blank'}>
           <i className={'fab fa-linkedin'} />
         </a>
-        <a href={'mailto:hello@brychan.io'} target={'_blank'}>
+        <a href={'mailto:hello@brychan.io'}>
           <i className={'fas fa-envelope'} />
         </a>
       </div>
