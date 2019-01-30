@@ -12,14 +12,14 @@ export default class Splash extends Component {
 
     this.scrollProgress = 0;
 
-    this.handleWindowScroll = this.handleWindowScroll.bind(this);
+    // this.handleWindowScroll = this.handleWindowScroll.bind(this);
 
     this.ref = React.createRef();
     this.identityContainerRef = React.createRef();
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', this.handleWindowScroll);
+    // window.addEventListener('scroll', this.handleWindowScroll);
   }
 
   componentWillUnmount() {
