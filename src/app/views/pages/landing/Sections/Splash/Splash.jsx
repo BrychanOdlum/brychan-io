@@ -33,13 +33,13 @@ export default class Splash extends Component {
     const scrollProgress = totalScrolled / targetScrolled;
 
     const opacity = 1 - (scrollProgress / 2.5);
-    const marginTop = 50 - (scrollProgress * 30);
+    const yOffset = (scrollProgress * 70);
     const pointerEvents = opacity > 0.1 ? 'auto' : 'auto';
 
     const styles = this.identityContainerRef.current.style;
 
     styles.opacity = opacity;
-    styles.marginTop = `${Math.round(marginTop)}px`;
+    styles.transform = `translateY(${yOffset}px)`;
     styles.pointerEvents = pointerEvents;
   }
 
