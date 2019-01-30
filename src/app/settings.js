@@ -7,7 +7,7 @@ export default {
   fullName: 'Brychan Bennett-Odlum',
   siteDomain: 'brychan.io',
   biography:
-    "I'm a computer science student from the United Kingdom currently interning as a <strong>software engineer</strong>\n for <strong>Cisco Systems</strong> in the San Francisco Bay Area. I focus on designing and developing quality\n web, iOS, and macOS apps\n with <strong>Swift</strong>, <strong>React</strong>, <strong>Java</strong>, <strong>JavaScript</strong>, <strong>HTML</strong>,\n and <strong>CSS</strong>.",
+    "I'm a software engineer currently interning for <strong>Cisco Systems</strong> in the San Francisco Bay Area while taking a break from studying in England. I focus on designing and developing quality web, iOS, and macOS apps with <strong>React</strong>, <strong>Swift</strong>, <strong>Java</strong>, <strong>JavaScript</strong>, <strong>HTML</strong>,\n and <strong>CSS</strong>.",
   experience: [
     {
       position: 'Software Engineer (intern)',

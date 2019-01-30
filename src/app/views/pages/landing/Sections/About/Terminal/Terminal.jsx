@@ -26,8 +26,8 @@ export default function Terminal() {
         </div>
         <div className={classes.command}>$ ls skills/</div>
         <div className={classes.response}>
-          <span>Swift</span>
           <span>React</span>
+          <span>Swift</span>
           <span>Java</span>
           <span>JavaScript</span>
           <span>C#</span>
