@@ -60,9 +60,11 @@ export default class Splash extends Component {
 
           <div className={classes.actionButtons}>
             <Button href={'mailto:hello@brychan.io'}>Get in touch</Button>
+            {/*
             <Button href={Resume} target={'_blank'}>
               Grab my résumé
             </Button>
+            */}
           </div>
         </div>
       </section>
