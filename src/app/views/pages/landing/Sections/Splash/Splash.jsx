@@ -1,46 +1,16 @@
+/* eslint-disable react/no-danger */
 import React, { Component } from 'react';
 
 import classes from './Splash.scss';
 import Settings from '../../../../../settings';
 import Button from '../../../../components/Button/Button';
 
-import Resume from '../../../../../../../files/resume.pdf';
-
 export default class Splash extends Component {
   constructor(props) {
     super(props);
 
-    this.scrollProgress = 0;
-
-    // this.handleWindowScroll = this.handleWindowScroll.bind(this);
-
     this.ref = React.createRef();
     this.identityContainerRef = React.createRef();
-  }
-
-  componentDidMount() {
-    // window.addEventListener('scroll', this.handleWindowScroll);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleWindowScroll);
-  }
-
-  handleWindowScroll() {
-    const totalScrolled = window.pageYOffset;
-    const targetScrolled = 100;
-
-    const scrollProgress = totalScrolled / targetScrolled;
-
-    const opacity = 1 - (scrollProgress / 2.5);
-    const yOffset = (scrollProgress * 70);
-    const pointerEvents = opacity > 0.1 ? 'auto' : 'auto';
-
-    const styles = this.identityContainerRef.current.style;
-
-    styles.opacity = opacity;
-    styles.transform = `translateY(${yOffset}px)`;
-    styles.pointerEvents = pointerEvents;
   }
 
   render() {
@@ -58,11 +28,6 @@ export default class Splash extends Component {
 
           <div className={classes.actionButtons}>
             <Button href={'mailto:hello@brychan.io'}>Get in touch</Button>
-            {/*
-            <Button href={Resume} target={'_blank'}>
-              Grab my résumé
-            </Button>
-            */}
           </div>
         </div>
       </section>
