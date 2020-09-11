@@ -1,0 +1,34 @@
+name: Deploy
+
+on:
+  push:
+    branches: 
+      - master
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Install depenqdencies
+      run: yarn
+
+    - name: Build project
+      run: yarn build
+
+    - name: (GH Pages) Route 404s, fixes Router
+      run: ln -s ./index.html ./build/404.html
+
+    - name: (GH Pages) Add CNAME file
+      run: echo $GH_CNAME > ./build/CNAME
+      env:
+        GH_CNAME: ${{ secrets.GH_CNAME }}
+
+    - name: Publish site
+      uses: maxheld83/ghpages@v0.2.1
+      env:
+        GH_PAT: ${{ secrets.GH_PAT }}
+        BUILD_DIR: ./build
+
