@@ -5,12 +5,8 @@ import Title from '../../../../components/Title/Title';
 
 export default function Contact() {
   const p1 = `
-  I am not currently interested in any freelance work offers. However, feel free to drop me
-  a line if you'd like to discuss anything from even your favourite coffee bean to your
-  fancy new startup.
-  `; // TODO: Move this into a config file... Markdown?
-  const p2 = `
-  I will soon be seeking employment opportunities for when I graduate in June 2020.
+  I am not currently interested in any work opportunities, however, if you'd like to reach out to
+  discuss anything else then please do feel free to drop me a line.
   `; // TODO: Move this into a config file... Markdown?
 
   return (
@@ -18,12 +14,7 @@ export default function Contact() {
       <Title title={'📨 Get in touch with me.'} alignRight />
 
       <div className={classes.contactDetails}>
-        <p>
-          {p1}
-          <br />
-          <br />
-          {p2}
-        </p>
+        <p>{p1}</p>
 
         <a href={'mailto:hello@brychan.io'}>
           <button>Say hello!</button>
