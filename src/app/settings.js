@@ -7,17 +7,24 @@ export default {
   fullName: 'Brychan Bennett-Odlum',
   siteDomain: 'brychan.io',
   biography:
-    "I'm a software engineer currently interning for <strong>Cisco Systems</strong> in the San Francisco Bay Area while taking a break from studying in England. I focus on designing and developing quality web, iOS, and macOS apps with <strong>React</strong>, <strong>Swift</strong>, <strong>Java</strong>, <strong>JavaScript</strong>, <strong>HTML</strong>,\n and <strong>CSS</strong>.",
+    "I'm a UK based UI Engineer working at <strong>Apple</strong>. I focus on designing and developing quality web, iOS, and macOS apps with <strong>React</strong>, <strong>Vue</strong>, <strong>JavaScript</strong>, <strong>Swift</strong>, <strong>HTML</strong>,\n and <strong>CSS / SASS</strong>.",
   experience: [
     {
-      position: 'Software Engineer (intern)',
-      company: 'Cisco Systems',
+      position: 'UI Engineer',
+      company: 'Apple',
+      location: 'England',
+      time: 'Sept 2020 - Now',
+      achievements: ['Coming soon.'],
+    },
+    {
+      position: 'Software Engineer',
+      company: 'Cisco',
       location: 'San Jose, California',
-      time: 'August 2018 - July 2019',
+      time: 'August 2018 - Jul 2020',
       achievements: [
-        "Developed a React based interface for the company's multicloud provisioning platform, allowing business units to provision their own cloud infrastructure across a range of providers.",
-        "Created a high performant Node microservice for providing data to the platform's user interface.",
-        'Worked closely with UX teams to design new interactions and features for the product.',
+        `Worked in an agile team developing a React based interface for the company's Multicloud Manager platform.`,
+        'Developed cloud cost calculator tool, added AWS integration, and wrote dozens of React components throughout the platform.',
+        'Designed and implemented a scalable Node.js microservice using Koa and SQL for providing statistical data for platform reports to the user interface via a REST API. Wrote Dockerfile and maintained scripts to deploy to OpenShift.',
       ],
     },
     {
@@ -26,11 +33,11 @@ export default {
       location: 'Remote',
       time: 'June 2016 - Oct 2017',
       achievements: [
-        'Designed, implemented, and maintained server software and game features / content for the rapidly growing Minecraft multiplayer games network owned by Mobcrush and partnered with Microsoft.',
-        'Wrote and maintained core game engine, custom event systems, and game world caching to improve server uptime by profiling our .NET server stack to reduce memory leaks, redundant locks, expensive operations, and resolving exceptions.\n',
-        'Developed server monitoring software to automatically handle service restarts upon critical exceptions, deadlocks, and other failed health checks to improve uptime and fulfil SLAs provided by Microsoft.',
-        'Rapidly developed functionality and content required to support 10,000+ concurrent users.\nWrote algorithms for generating balanced game inventories, item handling, and other core game engine routines.',
-        'Developed a prototype iOS app to handle microtransactions; now redundant due to in-built Marketplace.',
+        'Designed, implemented, and maintained a C# stack for InPvP, the hugely popular Minecraft multiplayer games network partnered with Microsoft.',
+        'Developed and maintained game server engine, event system, and game world caching to improve uptime by profiling our .NET stack to reduce memory leaks, redundant locks, expensive operations, and exceptions.',
+        'Developed a server monitoring application to automatically handle service restarts when health checks failed to improve uptime and fulfil Microsoft’s SLAs.',
+        'Rapidly developed functionality and content required to support 10,000+ concurrent users.',
+        'Designed algorithms for generating game inventories, item generation, etc.',
       ],
     },
     {
@@ -38,9 +45,7 @@ export default {
       company: 'University of Kent',
       location: 'Canterbury, United Kingdom',
       time: 'October 2017 - June 2018',
-      achievements: [
-        'Working at the university as a peer tutor mentoring first year computer science students assisting them with study skills, class tasks, and assignments during my own study.',
-      ],
+      achievements: ['Mentored and supervised through Java, JavaScript, HTML, PHP, and maths.'],
     },
     {
       position: 'Freelancer',
@@ -48,19 +53,20 @@ export default {
       location: 'Remote',
       time: 'January 2010 - March 2016',
       achievements: [
-        '[Dec 2016] Worked freelance for Leet, Inc., a large-scale cloud game server host developing their website and iOS app (which is used by over a million subscribers to the platform) single handedly based on a provided specification and API routes.',
+        '[Dec 2016] Contracted for Leet, Inc., an enterprise-scale cloud game server host. Developing their website and iOS app based on provided specifications, seeing over 3,000,000 downloads on the App Store.',
+        '[2010-2015] Developed GiekMafia, a text-based online multiplayer RPG game which attracted over 25,000 users; written in PHP and Node.js with a front end designed in Photoshop and implemented in HTML, CSS, and JavaScript.',
       ],
     },
   ],
   projects: [
     {
-      name: 'Macenger (tbd)',
+      name: `Macenger [eol]`,
       url: null,
       preview: previewMacenger,
       previewTitle: 'Macenger',
       previewType: 'laptop',
       description:
-        'Developing an open source Facebook Messenger client for macOS natively with Swift. The project is spawning the development of multiple new frameworks, soon to be released on Github.',
+        'An open source Facebook Messenger client for macOS natively with Swift. The project is spawning the development of multiple new frameworks, soon to be released on Github. Discontinued.',
       skills: ['Swift', 'GraphQL', 'Reverse Engineering'],
     },
     {
@@ -70,11 +76,11 @@ export default {
       previewTitle: 'https://musi.sh/',
       previewType: 'window',
       description:
-        'Led development of the open source Apple Music client for your web browser supporting over 50,000 users. Built with React, MusicKit JS, the Apple Music API, and a serverless backend powered by AWS.',
+        'Led development of the open source Apple Music client for your web browser supporting over 250,000 users. Built with React, MusicKit JS, the Apple Music API, and a serverless backend powered by AWS. Left the team in September 2020',
       skills: ['React', 'JavaScript', 'CSS', 'Serverless', 'AWS Lambda'],
     },
     {
-      name: 'Neene',
+      name: 'Neene [eol]',
       url: null,
       preview: previewNeene,
       previewTitle: 'Neene | Discontinued',
