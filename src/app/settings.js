@@ -7,14 +7,19 @@ export default {
   fullName: 'Brychan Bennett-Odlum',
   siteDomain: 'brychan.io',
   biography:
-    "I'm a UK based UI Engineer working at <strong>Apple</strong>. I focus on designing and developing quality web, iOS, and macOS apps with <strong>React</strong>, <strong>Vue</strong>, <strong>JavaScript</strong>, <strong>Swift</strong>, <strong>HTML</strong>,\n and <strong>CSS / SASS</strong>.",
+    "I'm a Software Engineer currently building better UIs at <strong>Apple</strong> in Cupertino. I focus on designing and developing quality web, iOS, and macOS apps with <strong>React</strong>, <strong>Vue</strong>, <strong>Stencil</strong>, <strong>JavaScript</strong>, <strong>Swift</strong>, <strong>HTML</strong>,\n and <strong>CSS / SASS</strong>.",
   experience: [
     {
-      position: 'UI Engineer',
+      position: 'Software Engineer',
       company: 'Apple',
-      location: 'England',
+      location: 'Cupertino, California',
       time: 'Sept 2020 - Now',
-      achievements: ['Coming soon.'],
+      achievements: [
+        'Built some cool stuff.',
+        'Busy building some more cool stuff.',
+        'Also building some other cool stuff.',
+        'Will build some other cool stuff after that too.',
+      ],
     },
     {
       position: 'Software Engineer',
