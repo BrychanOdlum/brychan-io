@@ -17,9 +17,9 @@ export default class Splash extends Component {
     return (
       <section className={classes.splash} ref={this.ref}>
         <div className={classes.identityContainer} ref={this.identityContainerRef}>
-          <h3>Hi, my name is</h3>
+          <h3>Hi, my name is...</h3>
           <h1>Brychan Bennett-Odlum</h1>
-          <h2>I create powerful and delightful products.</h2>
+          <h2>I create powerful and delightful web products.</h2>
 
           <p dangerouslySetInnerHTML={{ __html: Settings.biography }} />
 
